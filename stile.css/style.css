@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: "Inter", sans-serif;
+/* outline: 1px solid red; */
+}
+
+header{
+    background-color: #556be9;
+    box-shadow: 0 3px 10px #2940c0;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 5rem;
+}
+
+.logo img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+.nav-list ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:#fff;
+    margin:0 10px;
+    font-size: 1.5rem;
+    padding:10px;
+    border-radius: 10px;
+}
+.nav-link:hover{
+    background-color: rgb(98, 136, 240);
+    transition: .4s; 
+}
+
+.login-button button{
+    font-size: 1.5rem;
+    border: none;
+    background: transparent;
+    padding: 10px;
+}
+
+.login-button button:hover{
+    background-color: rgb(98, 136, 240);
+    transition: .4s;
+    border-radius: 10px;
+}
+
+.login-button a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+}
+
+.mobile-menu-icon, .mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width:730px){
+.nav-header{
+    padding: 1.5rem 4rem;
+}
+.nav-item, .login-button{
+    display: none;
+}
+.mobile-menu-icon{
+    display: block;
+}
+.mobile-menu-icon button{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.mobile-menu .nav-item{
+    display: block;
+    padding: 1rem 2rem;
+}
+.mobile-menu .login-button button{
+    width: 100%;
+}
+.open{
+
+    display: block;
+}
+}
