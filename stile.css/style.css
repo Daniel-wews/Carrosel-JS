@@ -9,8 +9,8 @@ font-family: "Inter", sans-serif;
 }
 
 header{
-    background-color: #556be9;
-    box-shadow: 0 3px 10px #2940c0;
+    background: rgb(238,174,202);
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
 }
 
 .nav-header{
@@ -40,7 +40,7 @@ header{
     border-radius: 10px;
 }
 .nav-link:hover{
-    background-color: rgb(98, 136, 240);
+    background-color: rgba(184, 49, 105, 0.288);
     transition: .4s; 
 }
 
@@ -52,7 +52,7 @@ header{
 }
 
 .login-button button:hover{
-    background-color: rgb(98, 136, 240);
+    background-color: rgba(184, 49, 105, 0.288);
     transition: .4s;
     border-radius: 10px;
 }
@@ -92,11 +92,15 @@ header{
     display: block;
     padding: 1rem 2rem;
 }
+.mobile-menu .login-button{
+    display: block;
+    padding: 1rem 2rem;
+}
 .mobile-menu .login-button button{
     width: 100%;
+    cursor: pointer;
 }
 .open{
-
     display: block;
 }
 }
